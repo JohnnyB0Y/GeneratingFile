@@ -1,0 +1,43 @@
+{
+    "framework_headers": [
+        "CTAPIBaseManager"
+    ],
+
+    "custom_headers": [
+        "CTAPIBaseManager+WNAPIBaseManager"
+    ],
+
+    "protocols": [
+        "CTAPIManager",
+        "CTAPIManagerValidator",
+        "CTPagableAPIManager"
+    ],
+
+    "properties": [
+        "@property (nonatomic, assign) NSInteger pageSize;",
+        "@property (nonatomic, assign, readonly) NSUInteger currentPageNumber;",
+        "@property (nonatomic, assign, readonly) BOOL isLastPage;"
+    ],
+
+    "methods": [
+        "- (void)loadNextPage;"
+    ],
+
+    "im_framework_headers": [
+        "AGVerifyManager"
+    ],
+
+    "im_custom_headers": [
+
+    ],
+
+    "im_protocols": [
+        "AGVerifyManagerInjectVerifiable"
+    ],
+
+    "im_properties": [
+        "@property (nonatomic, assign, readwrite) BOOL isFirstPage;",
+        "@property (nonatomic, assign, readwrite) BOOL isLastPage;",
+        "@property (nonatomic, assign, readwrite) NSUInteger pageNumber;"
+    ]
+}
