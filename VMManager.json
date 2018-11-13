@@ -1,0 +1,52 @@
+{
+    "class_name": "AGBookVMManager",
+
+    "framework_headers": [
+        "CTAPIBaseManager"
+    ],
+
+    "custom_headers": [
+        "CTAPIBaseManager+WNAPIBaseManager"
+    ],
+
+    "protocols": [
+        "CTAPIManager",
+        "CTAPIManagerValidator",
+        "CTPagableAPIManager",
+        "test"
+    ],
+
+    "properties": [
+        "properties1",
+        "properties2",
+        "properties3",
+        "properties4"
+    ],
+
+    "methods": [
+        "method1",
+        "method2",
+        "method3",
+        "method4"
+    ],
+
+    "im_framework_headers": [
+        "AGVerifyManager"
+    ],
+
+    "im_custom_headers": [
+        "AGBookListAPIManager"
+    ],
+
+    "im_protocols": [
+        "AGVerifyManagerInjectVerifiable"
+    ],
+
+    "im_properties": [
+        "properties1",
+        "properties2",
+        "properties3",
+        "properties4"
+    ]
+}
+  
