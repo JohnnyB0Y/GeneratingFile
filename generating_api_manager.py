@@ -13,7 +13,7 @@ __author__ = 'JohnnyB0Y'
 
 # 生成需要的 .h 内容
 def generating_interface_file(class_name,
-                              super_class_name,
+                              super_class_name='CTAPIBaseManager',
                               json_file_name='api_manager_pageable',
                               json_file_path=None,
                               author='JohnnyB0Y'):
@@ -94,6 +94,28 @@ def generating_implementation_file(class_name,
     file_operation.write_to_file(class_name, final_text, 'm')
 
 
+def generating_api_manager_file():
+    prefix = input('Input all class prefix name. The default "AG": ')
+    suffixes = input('Input all class suffixes name. The default "APIManager": ')
+    class_name = input('Input all class middle name. Separate with an English comma ",":\n')
+
+    if prefix == '':
+        prefix = 'AG'
+
+    if suffixes == '':
+        suffixes = 'APIManager'
+
+    # 必须输入中间名称
+    if class_name == '':
+        raise NameError
+
+    class_names = class_name.split(sep=',')
+    for name in class_names:
+        full_class_name = prefix + name + suffixes
+        generating_interface_file(full_class_name)
+        generating_implementation_file(full_class_name)
+
+
 # 调用
-generating_interface_file('AGBookListAPIManager', 'CTAPIBaseManager')
-generating_implementation_file('AGBookListAPIManager')
+if __name__ == '__main__':
+    generating_api_manager_file()

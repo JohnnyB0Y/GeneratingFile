@@ -1,14 +1,14 @@
 //
-//  AGBookListAPIManager.m
+//  AGJackAPIManager.m
 //
 //  Created by JohnnyB0Y on 2018/11/14.
 //  Copyright © 2018年 JohnnyB0Y. All rights reserved.
 //
 
 #import <AGVerifyManager.h>
-#import "AGBookListAPIManager.h"
+#import "AGJackAPIManager.h"
 
-@interface AGBookListAPIManager () 
+@interface AGJackAPIManager () 
 <AGVerifyManagerInjectVerifiable>
 
 @property (nonatomic, assign) NSInteger pageSize;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation AGBookListAPIManager
+@implementation AGJackAPIManager
 
 - (instancetype)init
 {
