@@ -5,6 +5,8 @@ __pycache__/
 
 # OS X
 .DS_Store
+# 
+generating_object_files/
 
 # C extensions
 *.so
